@@ -42,10 +42,12 @@ Antes de comenzar es necesario conocer un poco la estructura del proyecto
 Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. La página del producto, las colecciones y el home page utiliza el archivo theme.liquid
 
 #### Templates
-Los templates controlan que se tiene que mostrar en cada página, La página del producto utiliza el template llamado product.liquid
+Los templates controlan que se tiene que mostrar en cada página, La página del producto utiliza el archivo product.liquid
 
 #### Sections
-Son módulos reutilizables de contenidos que pueden ser personalizados por el cliente. Para utilizar una section en un template se utiliza la siguiente sintaxis {% section 'section-name' %}
+Son módulos reutilizables de contenido que pueden ser personalizados por el cliente. Para utilizar una section en un template se utiliza la siguiente sintaxis
+
+    {% section 'section-name' %}
 
 #### Snippets
 Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts.
