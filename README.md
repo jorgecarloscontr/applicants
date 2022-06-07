@@ -29,5 +29,5 @@ Cuando el usuario se desplace hacia abajo y el botón deje de estar visible, se 
 
 Cuando el usuario cambia de variante, este también debe reflejarse en la información que se muestra en la barra superior
 
-![ header1](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo75.png?v=1654616344)
-![ header2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo76.png?v=1654616727)
+![ header1](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo80.png?v=1654617998)
+![ header2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo79.png?v=1654617876)
