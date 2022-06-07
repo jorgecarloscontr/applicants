@@ -2,7 +2,7 @@
 
 Lo siguiente es una prueba para evaluar a los postulantes a programador front-end
 
-### Introducción
+## Introducción
 
 Este repositorio contiene una serie de requerimientos de un caso práctico, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de desarrollo.
 
@@ -15,7 +15,7 @@ Principalmente los siguientes aspectos:
 3. Familiaridad con plataformas de desarrollo.
 
 
-### Importante
+## Importante
 
 La siguiente prueba será realizada desde la plataforma de Shopify, y para ello necesitarás acceso a la cuenta en donde se realizará la prueba.
 
@@ -56,7 +56,7 @@ Directorio que contiene todos los activos del proyecto como imágenes, hojas de 
 
 
 
-### Ejercicio
+## Ejercicio
 
 Para mejorar la experiencia de usuario en una tienda en línea, se busca que el botón de  'ADD TO CART' siempre este visible en la pantalla.
 
@@ -67,7 +67,7 @@ Cuando el usuario se desplace hacia abajo y el botón deje de estar visible, se 
 
 ![ header](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo74.png?v=1654615253)
 
-#### Importante
+### Importante
 
 Cuando el usuario cambia de variante, este también debe reflejarse en la información que se muestra en la barra superior
 
