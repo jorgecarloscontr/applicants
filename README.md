@@ -24,12 +24,13 @@ Cuando tengas acceso a la cuenta deberás dirigirte a la siguiente ruta Online S
 
 ![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo81.png?v=1654619518)
 
-Los cambios que realices deberas ralizarlo en el theme que creaste anteriormente. Para ello deberas de dar click en el boton 'Actions' de tu theme y posteriormente en 'Edit Code'.
+Los cambios que realices deberás realizarlo en el theme que creaste anteriormente. Para ello deberás de dar clic en el botón 'Actions' de tu theme y posteriormente en 'Edit Code'.
 
 ![ Shopify platform2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo82.png?v=1654620280)
 
 
-Siguiendo los anteriores pasos podras ver todo el codigo del proyecto y podras editar los archivos correspondientes para realizar la prueba desde esa ventana.
+Siguiendo los anteriores pasos podrás ver todo el código del proyecto y editar los archivos correspondientes para realizar la prueba desde esa ventana.
+
 ![ Shopify platform3](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo83.png?v=1654622858)
 
 
@@ -38,20 +39,19 @@ Siguiendo los anteriores pasos podras ver todo el codigo del proyecto y podras e
 Antes de comenzar es necesario conocer un poco la estructura del proyecto
 
 #### layouts
-Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. La pagina del producto, las colleciones y el home page utiliza el archivo theme.liquid
+Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. La página del producto, las colecciones y el home page utiliza el archivo theme.liquid
 
 #### Templates
-Los templates controlan que se tiene que mostrar en cada pagina, La pagina del producto utiliza el template llamdo product.liquid
+Los templates controlan que se tiene que mostrar en cada página, La página del producto utiliza el template llamado product.liquid
 
 #### Sections
-Son módulos reutilizables de contenidos que pueden ser customizados por el cliente. para utilizar una section en un template se utiliza la siguiente sintaxis {% section 'section-name' %}
+Son módulos reutilizables de contenidos que pueden ser personalizados por el cliente. Para utilizar una section en un template se utiliza la siguiente sintaxis {% section 'section-name' %}
 
 #### Snippets
 Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts.
 
 #### Assets
 Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
-
 
 
 
