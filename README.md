@@ -21,6 +21,13 @@ Para mejorar la experiencia de usuario en una tienda en línea, se busca que el 
 ![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo72.png?v=1654614428)
 
 
-Cuando el usuario se desplace hacia abajo y el botón deje de estar visible, se debe de mostrar una barra en la parte superior de la página, el cual le permita al usuario visualizar el nombre del producto, la variante y un botón para agregar al carrito, similar a lo que se tiene en la siguiente imagen:
+Cuando el usuario se desplace hacia abajo y el botón deje de estar visible, se debe de mostrar una barra en la parte superior de la página, el cual le permita al usuario visualizar el nombre del producto, la variante actual, precio y un botón para poder agregar al carrito, similar a lo que se tiene en la siguiente imagen:
 
 ![ header](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo74.png?v=1654615253)
+
+#### Importante
+
+Cuando el usuario cambia de variante, este también debe reflejarse en la información que se muestra en la barra superior
+
+![ header1](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo75.png?v=1654616344)
+![ header2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo76.png?v=1654616727)
