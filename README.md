@@ -14,11 +14,53 @@ Principalmente los siguientes aspectos:
 2. Calidad del código entregado (estructura y buenas prácticas),
 3. Familiaridad con plataformas de desarrollo.
 
+
+### Importante
+
+La siguiente prueba será realizada desde la plataforma de Shopify, y para ello necesitarás acceso a la cuenta en donde se realizará la prueba.
+
+Cuando tengas acceso a la cuenta deberás dirigirte a la siguiente ruta Online Store -> Themes y duplicar el current theme para después renombrarlo con tu nombre y apellido
+
+
+![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo81.png?v=1654619518)
+
+Los cambios que realices deberas ralizarlo en el theme que creaste anteriormente. Para ello deberas de dar click en el boton 'Actions' de tu theme y posteriormente en 'Edit Code'.
+
+![ Shopify platform2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo82.png?v=1654620280)
+
+
+Siguiendo los anteriores pasos podras ver todo el codigo del proyecto y podras editar los archivos correspondientes para realizar la prueba desde esa ventana.
+![ Shopify platform3](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo83.png?v=1654622858)
+
+
+
+
+Antes de comenzar es necesario conocer un poco la estructura del proyecto
+
+#### layouts
+Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. La pagina del producto, las colleciones y el home page utiliza el archivo theme.liquid
+
+#### Templates
+Los templates controlan que se tiene que mostrar en cada pagina, La pagina del producto utiliza el template llamdo product.liquid
+
+#### Sections
+Son módulos reutilizables de contenidos que pueden ser customizados por el cliente. para utilizar una section en un template se utiliza la siguiente sintaxis {% section 'section-name' %}
+
+#### Snippets
+Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts.
+
+#### Assets
+Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
+
+
+
+
+
 ### Ejercicio
 
 Para mejorar la experiencia de usuario en una tienda en línea, se busca que el botón de  'ADD TO CART' siempre este visible en la pantalla.
 
-![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo72.png?v=1654614428)
+![ Shopify platform4](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo72.png?v=1654614428)
 
 
 Cuando el usuario se desplace hacia abajo y el botón deje de estar visible, se debe de mostrar una barra en la parte superior de la página, el cual le permita al usuario visualizar el nombre del producto, la variante actual, precio y un botón para poder agregar al carrito, similar a lo que se tiene en la siguiente imagen:
