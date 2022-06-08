@@ -17,23 +17,21 @@ Principalmente los siguientes aspectos:
 
 ## Importante
 
-La siguiente prueba será realizada desde la plataforma de Shopify, y para ello necesitarás acceso a la cuenta en donde se realizará la prueba.
+La siguiente prueba será realizada usando una vista previa de un sitio web en Shopify, para ello necesitarás instalar la herramienta[ Shopify Theme Kit ](https://shopify.dev/themes/tools/theme-kit/getting-started).
 
-Cuando tengas acceso a la cuenta deberás dirigirte a la siguiente ruta Online Store -> Themes y duplicar el current theme para después renombrarlo con tu nombre y apellido
+Después de instalar Theme Kit necesitarás una contraseña y un theme_id que te será proporcionado por el encargado que te realizará la prueba.
 
+El siguiente paso sería descargar el proyecto con el siguiente comando: 
+   
+    theme get --password=[your-password] --store="equilibriumtestinglab.myshopify.com" --themeid=[your-theme-id]
 
-![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo81.png?v=1654619518)
+Ahora que has establecido una conexión con un tema de Shopify, deberas correr el siguiente comando para poder abrir el sitio web desde tu navegador
 
-Los cambios que realices deberás realizarlo en el theme que creaste anteriormente. Para ello deberás de dar clic en el botón 'Actions' de tu theme y posteriormente en 'Edit Code'.
-
-![ Shopify platform2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo82.png?v=1654620280)
-
-
-Siguiendo los anteriores pasos podrás ver todo el código del proyecto y editar los archivos correspondientes para realizar la prueba desde esa ventana.
-
-![ Shopify platform3](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo83.png?v=1654622858)
-
-
+    theme open
+    
+Antes de realizar cualquier cambio en el proyecto es necesario correr el siguiente comando para que pueda verse reflejado en el sitio.
+    
+    theme watch
 
 
 Antes de comenzar es necesario conocer un poco la estructura del proyecto
