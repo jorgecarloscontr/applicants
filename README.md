@@ -17,29 +17,27 @@ Principalmente los siguientes aspectos:
 
 ## Importante
 
-La siguiente prueba será realizada desde la plataforma de Shopify, y para ello necesitarás acceso a la cuenta en donde se realizará la prueba.
+La siguiente prueba será realizada usando una vista previa de un sitio web en Shopify, para ello necesitarás instalar la herramienta[ Shopify Theme Kit ](https://shopify.dev/themes/tools/theme-kit/getting-started).
 
-Cuando tengas acceso a la cuenta deberás dirigirte a la siguiente ruta Online Store -> Themes y duplicar el current theme para después renombrarlo con tu nombre y apellido
+Después de instalar Theme Kit necesitarás una contraseña y un theme_id que te será proporcionado por el encargado que te realizará la prueba.
 
+El siguiente paso sería descargar el proyecto con el siguiente comando: 
+   
+    theme get --password=[your-password] --store="equilibriumtestinglab.myshopify.com" --themeid=[your-theme-id]
 
-![ Shopify platform](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo81.png?v=1654619518)
+Ahora que has establecido una conexión con un tema de Shopify, deberás correr el siguiente comando para poder visualizar el sitio web de Shopify en tu navegador
+   
+    theme open
+    
+Antes de realizar cualquier cambio en el proyecto, es necesario correr el siguiente comando para que todos los cambios que realices en los archivos del proyecto pueda verse reflejado en el sitio.
 
-Los cambios que realices deberás realizarlo en el theme que creaste anteriormente. Para ello deberás de dar clic en el botón 'Actions' de tu theme y posteriormente en 'Edit Code'.
-
-![ Shopify platform2](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo82.png?v=1654620280)
-
-
-Siguiendo los anteriores pasos podrás ver todo el código del proyecto y editar los archivos correspondientes para realizar la prueba desde esa ventana.
-
-![ Shopify platform3](https://cdn.shopify.com/s/files/1/0553/4656/1213/files/Sin_titulo83.png?v=1654622858)
-
-
+    theme watch
 
 
-Antes de comenzar es necesario conocer un poco la estructura del proyecto
+### Antes de comenzar es necesario conocer un poco la estructura del proyecto
 
 #### Layouts
-Es la base del theme. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer, así como también te permite agregar contenido al elemento &lt;head&gt;.
+Es la base del theme. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer, así como también te permite modificar el contenido del elemento &lt;head&gt;.
 La página del producto utiliza el archivo theme.liquid
 
 #### Templates
@@ -52,13 +50,36 @@ Son módulos reutilizables de contenido que pueden ser personalizados por el cli
     {% section 'section-name' %}
 
 #### Snippets
-Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts. Para añadir un snippet se utiliza la siguiente sintaxis
+Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts. Para añadir un snippet se utiliza la siguiente sintaxis:
 
     {% render 'snippet-name' %}
 
 #### Assets
 Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
 
+<br/>
+
+### Introducción a la sintaxis de Liquid
+
+En Liquid, hay tres tipos de códigos: objects, tags y filters.
+
+#### Objects
+
+Es un tipo de datos abstracto que incluye múltiples propiedades. Los objetos se envuelven en delimitadores de doble llave {{ }} para poder ser renderizado en el html.
+
+    <h1>{{ product.title }}</h2>
+
+#### Tags
+Se utilizan para crear la lógica y el flujo de control de las plantillas. Los delimitadores  {% %} y el texto que los rodea no producen ninguna salida visible cuando se renderiza la página web. Esto permite asignar variables y crear condiciones o bucles sin mostrar nada de la lógica de Liquid en la página.
+    
+    {% if product.available %}
+        <h5>{{ product.title }}</h5>
+    {% endif %}
+
+#### Filters 
+Se utilizan para modificar numbers, strings, objects  y variables. Hay muchos tipos de filtros que se pueden aplicar en shopify, para conocer un poco más les recomendamos el siguiente enlace: [ Liquid syntax ](https://shopify.dev/api/liquid).
+
+    {{ product.title | capitalize }}
 
 
 ## Ejercicio
