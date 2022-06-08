@@ -38,8 +38,9 @@ Siguiendo los anteriores pasos podrás ver todo el código del proyecto y editar
 
 Antes de comenzar es necesario conocer un poco la estructura del proyecto
 
-#### layouts
-Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. La página del producto, las colecciones y el home page utiliza el archivo theme.liquid
+#### Layouts
+Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. Así como también te permite agregar contenido en el elemento <head>.
+La página del producto, las colecciones y el home page utiliza el archivo theme.liquid
 
 #### Templates
 Los templates controlan que se tiene que mostrar en cada página, La página del producto utiliza el archivo product.liquid
