@@ -57,8 +57,9 @@ Los snippets son trozos de código que pueden ser referenciados dentro de sectio
 #### Assets
 Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
 
+<br/>
 
-### Una introducción a la sintaxis de Liquid
+### Introducción a la sintaxis de Liquid
 
 En Liquid, hay tres tipos de códigos: objects, tags y filters.
 
@@ -70,9 +71,16 @@ Es un tipo de datos abstracto que incluye múltiples propiedades. Los objetos se
 
 #### Tags
 Se utilizan para crear la lógica y el flujo de control de las plantillas. Los delimitadores  {% %} y el texto que los rodea no producen ninguna salida visible cuando se renderiza la página web. Esto permite asignar variables y crear condiciones o bucles sin mostrar nada de la lógica de Liquid en la página.
+    
+    {% if product.available %}
+        <h5>{{ product.title }}</h5>
+    {% endif %}
 
 #### Filters 
 Se utilizan para modificar numbers, strings, objects  y variables. Hay muchos tipos de filtros que se pueden aplicar en shopify, para conocer un poco más les recomendamos el siguiente enlace: 
+
+    {{ product.title | capitalize }}
+
 [ Liquid syntax ](https://shopify.dev/api/liquid).
 
 
