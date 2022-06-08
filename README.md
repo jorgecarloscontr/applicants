@@ -77,11 +77,9 @@ Se utilizan para crear la lógica y el flujo de control de las plantillas. Los d
     {% endif %}
 
 #### Filters 
-Se utilizan para modificar numbers, strings, objects  y variables. Hay muchos tipos de filtros que se pueden aplicar en shopify, para conocer un poco más les recomendamos el siguiente enlace: 
+Se utilizan para modificar numbers, strings, objects  y variables. Hay muchos tipos de filtros que se pueden aplicar en shopify, para conocer un poco más les recomendamos el siguiente enlace: [ Liquid syntax ](https://shopify.dev/api/liquid).
 
     {{ product.title | capitalize }}
-
-[ Liquid syntax ](https://shopify.dev/api/liquid).
 
 
 ## Ejercicio
