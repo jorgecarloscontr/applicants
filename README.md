@@ -39,23 +39,25 @@ Siguiendo los anteriores pasos podrás ver todo el código del proyecto y editar
 Antes de comenzar es necesario conocer un poco la estructura del proyecto
 
 #### Layouts
-Es la base del tema. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer. Así como también te permite agregar contenido en el elemento <head>.
-La página del producto, las colecciones y el home page utiliza el archivo theme.liquid
+Es la base del theme. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer, así como también te permite agregar contenido al elemento &lt;head&gt;.
+La página del producto utiliza el archivo theme.liquid
 
 #### Templates
-Los templates controlan que se tiene que mostrar en cada página, La página del producto utiliza el archivo product.liquid
+Los templates controlan que se tiene que mostrar en cada página. Cada theme debe incluir diferentes tipos de templates para mostrar diferentes tipos de contenido. 
+La página del producto utiliza el archivo product.liquid. 
 
 #### Sections
-Son módulos reutilizables de contenido que pueden ser personalizados por el cliente. Para utilizar una section en un template se utiliza la siguiente sintaxis
+Son módulos reutilizables de contenido que pueden ser personalizados por el cliente. Para añadir una section en un template se utiliza la siguiente sintaxis:
 
     {% section 'section-name' %}
 
 #### Snippets
-Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts.
+Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts. Para añadir un snippet se utiliza la siguiente sintaxis
+
+    {% render 'snippet-name' %}
 
 #### Assets
 Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
-
 
 
 
