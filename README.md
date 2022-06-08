@@ -25,19 +25,19 @@ El siguiente paso sería descargar el proyecto con el siguiente comando: 
    
     theme get --password=[your-password] --store="equilibriumtestinglab.myshopify.com" --themeid=[your-theme-id]
 
-Ahora que has establecido una conexión con un tema de Shopify, deberas correr el siguiente comando para poder abrir el sitio web desde tu navegador
-
+Ahora que has establecido una conexión con un tema de Shopify, deberás correr el siguiente comando para poder visualizar el sitio web de Shopify en tu navegador
+   
     theme open
     
-Antes de realizar cualquier cambio en el proyecto es necesario correr el siguiente comando para que pueda verse reflejado en el sitio.
-    
+Antes de realizar cualquier cambio en el proyecto, es necesario correr el siguiente comando para que todos los cambios que realices en los archivos del proyecto pueda verse reflejado en el sitio.
+
     theme watch
 
 
-Antes de comenzar es necesario conocer un poco la estructura del proyecto
+### Antes de comenzar es necesario conocer un poco la estructura del proyecto
 
 #### Layouts
-Es la base del theme. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer, así como también te permite agregar contenido al elemento &lt;head&gt;.
+Es la base del theme. Es utilizado para alojar los elementos repetidos del tema, como el header y el footer, así como también te permite modificar el contenido del elemento &lt;head&gt;.
 La página del producto utiliza el archivo theme.liquid
 
 #### Templates
@@ -50,13 +50,30 @@ Son módulos reutilizables de contenido que pueden ser personalizados por el cli
     {% section 'section-name' %}
 
 #### Snippets
-Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts. Para añadir un snippet se utiliza la siguiente sintaxis
+Los snippets son trozos de código que pueden ser referenciados dentro de sections, templates o layouts. Para añadir un snippet se utiliza la siguiente sintaxis:
 
     {% render 'snippet-name' %}
 
 #### Assets
 Directorio que contiene todos los activos del proyecto como imágenes, hojas de estilo y archivos javascript.
 
+
+### Una introducción a la sintaxis de Liquid
+
+En Liquid, hay tres tipos de códigos: objects, tags y filters.
+
+#### Objects
+
+Es un tipo de datos abstracto que incluye múltiples propiedades. Los objetos se envuelven en delimitadores de doble llave {{ }} para poder ser renderizado en el html.
+
+    <h1>{{ product.title }}</h2>
+
+#### Tags
+Se utilizan para crear la lógica y el flujo de control de las plantillas. Los delimitadores  {% %} y el texto que los rodea no producen ninguna salida visible cuando se renderiza la página web. Esto permite asignar variables y crear condiciones o bucles sin mostrar nada de la lógica de Liquid en la página.
+
+#### Filters 
+Se utilizan para modificar numbers, strings, objects  y variables. Hay muchos tipos de filtros que se pueden aplicar en shopify, para conocer un poco más les recomendamos el siguiente enlace: 
+[ Liquid syntax ](https://shopify.dev/api/liquid).
 
 
 ## Ejercicio
