@@ -10,9 +10,9 @@ Este repositorio contiene una serie de requerimientos de un caso práctico, que 
 
 Principalmente los siguientes aspectos:
 
-1. Creatividad para resolver los requerimientos,
-2. Calidad del código entregado (estructura y buenas prácticas),
-3. Familiaridad con plataformas de desarrollo.
+1. Creatividad para resolver los requerimientos.
+2. Calidad del código entregado (Keep it simple).
+3. Adpatabilidad en plataformas de desarrollo.
 
 
 ## Importante
